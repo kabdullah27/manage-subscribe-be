@@ -251,6 +251,7 @@ Caddyfile.
 * [Pytest](https://docs.pytest.org/en/latest/)
 * [Starlette](https://www.starlette.io/)
 * [Uvicorn][uvicorn]
+* [FastAPI-Nano][fastapi_nano]
 
 ## Resources
 
@@ -266,6 +267,7 @@ Caddyfile.
 [gunicorn]: https://gunicorn.org/
 [httpx]: https://www.python-httpx.org/
 [uvicorn]: https://uvicorn.org/
+[fastapi_nano]: https://github.com/rednafi/fastapi-nano
 
 <div align="center">
 ✨ 🍰 ✨
