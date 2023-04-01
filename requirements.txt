@@ -50,6 +50,7 @@ typing-extensions==4.4.0
     # via pydantic
 uvicorn==0.21.1
     # via -r requirements.in
+sqlalchemy==2.0.8
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools

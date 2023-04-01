@@ -134,8 +134,8 @@ This shows the folder structure of the default template.
 
 ```
 fastapi-nano
-├── apis                          # this houses all the API packages
-│   ├── api_a                      # 
+├── apis                      # this houses all the API packages
+│   ├── api_a                 # 
 │   │   ├── __init__.py       # empty init file to make the api_a folder a package
 │   │   ├── mainmod.py        # main module of api_a package
 │   │   └── submod.py         # submodule of api_a package
@@ -147,17 +147,23 @@ fastapi-nano
 │   ├── auth.py               # authentication with OAuth2
 │   ├── config.py             # sample config file
 │   └── __init__.py           # empty init file to make the config folder a package
-│   ├── __init__.py               # empty init file to make the app folder a package
 ├── main.py                   # main file where the fastAPI() class is called
+├── sql_app                   # this is where all the database setting
+│   ├── crud.py               # reusable functions to interact with the data in the database.
+│   ├── databaase.py          # sample config file
+│   ├── main.py               # sample config file
+│   ├── models.py             # sample config file
+│   ├── schemas.py            # sample config file
+│   └── __init__.py           # empty init file to make the sql_app folder a package
 ├── routes                    # this is where all the routes live
 │   └── views.py              # file containing the endpoints of api_a and api_b
 ├── tests                     # test package
 │   ├── __init__.py           # empty init file to make the tests folder a package
 │   ├── test_api.py           # integration testing the API responses
 │   └── test_functions.py     # unit testing the underlying functions
-├── .env                          # env file containing app variables
-├── requirements-dev.txt          # pinned dev dependencies
-└── requirements.txt              # pinned app dependencies
+├── .env                      # env file containing app variables
+├── requirements-dev.txt      # pinned dev dependencies
+└── requirements.txt          # pinned app dependencies
 ```
 
 In the above structure, `api_a` and `api_b` are the main packages where the code of the
@@ -252,7 +258,7 @@ Caddyfile.
 * [Starlette](https://www.starlette.io/)
 * [Uvicorn][uvicorn]
 * [FastAPI-Nano][fastapi_nano]
-
+* [SQLAlchemy][https://www.sqlalchemy.org/]
 ## Resources
 
 * [Flask divisional folder structure][divisional_pattern]
